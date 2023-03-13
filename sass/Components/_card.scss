@@ -1,0 +1,61 @@
+.card {
+    height: 275px;
+    margin-top: 10px;
+    .card-body {
+        padding: $pd-0;
+        .card-title {
+            @include styleText($color-black-0, $fs-0, $fw-1);
+        }
+        .card-text {
+            @include styleText($color-gray-0, $fs-1 - 1, $fw-0);
+            margin: $mg-0 0;
+        }
+        .card_stars {
+            i {
+                @include styleText($color-yellow-0, $fs-1 - 1, $fw-3);
+            }
+            .card_rate {
+                @include styleText($color-gray-0, $fs-1, $fw-1);
+            }
+            .card_total {
+                @include styleText($color-gray-0, $fs-1, $fw-0);
+            }
+        }
+        .card_price {
+            text-align: right;
+            padding: $pd-2 + 2 0;
+            span {
+                &:first-child {
+                    @include styleText($color-gray-0, $fs-1, $fw-0);
+                    text-decoration: line-through;
+                }
+                &:last-child {
+                    @include styleText($color-black-0, $fs-1, $fw-1);
+                }
+            }
+        }
+    }
+}
+.card-feedback {
+    height: 280px;
+    .card-body {
+        padding: 2rem;
+        .card_top {
+            display: flex;
+        }
+        .avatar {
+            margin-right: $mg-2 - 5;
+            img {
+                width: 64px;
+                height: 64px;
+                border-radius: 50%;
+            }
+        }
+        .card_name {
+            margin-bottom: 0;
+        }
+        .card-text {
+            @include styleText($color-black-0, $fs-0, $fw-0);
+        }
+    }
+}

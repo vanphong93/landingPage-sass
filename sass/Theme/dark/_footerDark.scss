@@ -1,0 +1,47 @@
+.darkMode {
+    footer {
+        .footer_top {
+            ul {
+                .nav-item {
+                    .nav-link {
+                        &:hover {
+                            transition: .5s;
+                            color: $color-white-0;}
+                        color: $color-dark-5;
+                    }
+                }
+            }
+            .btn-group {
+                .dropdown-menu {
+                    background-color: $color-dark-6;
+            
+                    border-color: $color-dark-2;
+                    .dropdown-item {
+                        color: $color-dark-5;
+                        &:hover{
+                            background-color: $color-dark-0;
+                        }
+                    }
+                }
+            }
+        }
+        hr {
+            background-color: $color-dark-2;
+        }
+        .footer_bot {
+            .logo-white {
+                display: inline-block;
+            }
+            .logo-black {
+                display: none;
+            }
+            .nav-link {
+                &:hover {
+                    transition: .5s;
+                    color: $color-white-0;}
+                color: $color-dark-5;
+            }
+        }
+      
+    }
+}
